@@ -11,8 +11,7 @@
     <div class="row">
         <div class="col-md-12">
             <ul>
-                <li>Dummy 1</li>
-                <li>Dummy 2</li>
+                <li th:each="todo : ${todos}" th:text="${todo.getTitle()}">Dummy 1</li>
             </ul>
         </div>
     </div>
